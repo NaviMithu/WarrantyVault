@@ -1,0 +1,62 @@
+name: warranty_vault
+description: "WarrantyVault - Personal vehicle battery warranty tracker"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  supabase_flutter: ^2.8.4
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.8.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.20.2
+  fl_chart: ^0.70.2
+  flutter_dotenv: ^5.2.1
+  csv: ^6.0.0
+  share_plus: ^10.1.4
+  path_provider: ^2.1.5
+  file_picker: ^8.1.7
+  url_launcher: ^6.3.1
+  google_fonts: ^6.2.1
+  connectivity_plus: ^6.1.4
+  uuid: ^4.5.1
+  flutter_native_splash: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/icon_square.png"
+  adaptive_icon_background: "#0C1517"
+  adaptive_icon_foreground: "assets/logo/adaptive_foreground.png"
+
+flutter_native_splash:
+  color: "#F1F5F9"
+  color_dark: "#0B1220"
+  image: "assets/logo/logo.png"
+  image_dark: "assets/logo/logo.png"
+  android_12:
+    color: "#F1F5F9"
+    color_dark: "#0B1220"
+    image: "assets/logo/logo.png"
+    image_dark: "assets/logo/logo.png"
+
+dependency_overrides:
+  path_provider_android: 2.2.17
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/
+    - .env
